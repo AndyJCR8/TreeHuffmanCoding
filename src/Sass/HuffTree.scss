@@ -1,0 +1,22 @@
+.TreeContainer {
+  display: flex; flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 500px;
+
+  .node-root > circle { fill: white; stroke: rgb(179, 197, 255); }
+
+  .node-branch > circle { fill: white; stroke: rgb(179, 197, 255); }
+
+  .node-leaf > circle { fill: white; stroke: rgb(179, 197, 255); }
+
+  .node-link { stroke: white !important; }
+
+  .svg-styles {
+    .rd3t-label {
+      text { fill: white !important; }
+    }
+  }
+
+}

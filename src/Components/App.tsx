@@ -1,10 +1,7 @@
 import { ChangeEvent, MouseEvent, useState } from 'react'
 import reactLogo from '../assets/react.svg'
 import '../Sass/App.scss';
-
-interface EventTarget {
-  files?: FileList
-}
+import HuffTree from './HuffTree';
 
 function App() {
   
@@ -48,9 +45,10 @@ function App() {
           <textarea readOnly id='results' className='content' rows={12}></textarea>
         </div>
       </div>
+      <HuffTree/>
       <footer>
+        Ammi Getzaida González Enriquez [202008008]<br/>
         Andy de Jesús Cáceres Ramírez   [202008032]
-        Ammi Getzaida González Enriquez [202008008]
       </footer>
     </div>
   )
