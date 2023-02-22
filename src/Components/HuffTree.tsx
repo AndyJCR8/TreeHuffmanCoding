@@ -1,27 +1,11 @@
 import React from 'react'
 import Tree from 'react-d3-tree'
 import "../Sass/HuffTree.scss"
-const data = [
-  {
-    name: 'a',
-    children: [
-      {
-        name: 'b',
-        children: [
-          {
-            name: 'd'
-          }
-        ]
-      },
-      {
-        name: 'c'
-      }
-    ]
-  }
-]
+import { RawNodeDatum } from 'react-d3-tree/lib/types/types/common'
 
 
-export default function HuffTree() {
+
+export default function HuffTree({data}: {data: RawNodeDatum | RawNodeDatum[]}) {
   return (
     <div className="TreeContainer">
       <p className='title'>Árbol de codificación - Huffman</p>
